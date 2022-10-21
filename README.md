@@ -1,8 +1,8 @@
 # Atlas Installation  ![image info](./pictures/Atlas_small.png) 
 Resources for installing OHDSI ATLAS using Docker containers.
 
-## Preparation
-### Configure the Database
+## Administrator Preparation
+### Configure the Common Data Model Database
 Follow these [instructions](https://github.com/OHDSI/WebAPI/wiki/PostgreSQL-Installation-Guide) for preparing the PostgreSQL database.
 
 ### Build WebAPI app
@@ -31,13 +31,12 @@ In either a Linux or a [WSL](https://learn.microsoft.com/en-us/windows/wsl/insta
 		
 * Upload the `~/git/OHDSI/WebAPI/target/WebAPI.war` file to the DBMI `AtlasInstallation` [repo](https://github.com/DBMI/AtlasInstallation).
  
-## Installing for each user
+## User Installation
 
 ### Linux
 
 ### Windows
-
-#### Install in Docker container
+We'll run Atlas in a Docker container.
 * Install [Docker](https://docs.docker.com/get-started/).
 * Install [Git](https://gitforwindows.org/).
 * In a convenient subdirectory (perhaps `C:\Git\OHDSI`) clone the `AtlasInstallation` repo:
